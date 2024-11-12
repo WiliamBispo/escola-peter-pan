@@ -1,0 +1,256 @@
+/*Estilo Barra de Navegação*/
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+}
+
+.navbar,
+.navbar a {
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    color: #333;
+}
+
+.navbar .nav-link {
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #007bff;
+}
+
+.navbar .navbar-brand {
+    font-weight: 800;
+    font-size: 24px;
+    color: #333;
+}
+
+.navbar-brand:hover {
+    color: #007bff;
+}
+
+/*Estilo Barra de Carousel*/
+
+.carousel-inner img {
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.carousel {
+    padding-top: 4.95rem;
+}
+
+/* Estilo da página Sobre */
+
+#content-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    padding-top: 10rem;
+    padding-bottom: 9rem;
+    margin-bottom: 5rem;
+}
+
+.left-column {
+    font-family: "Nunito", sans-serif;
+    margin-right: 20px;
+    width: 40%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.left-column h2 {
+    font-weight: 800;
+    color: #00c9da;
+    font-size: 3.2em;
+    margin-bottom: 2rem;
+}
+
+.left-column p {
+    font-size: 1.6em;
+    color: #a1a1a1;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.rigth-column img {
+    width: 100%;
+    margin-left: 8.33333333%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Estilo do Serviços */
+
+#content-service {
+    background: #00c9da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 9rem;
+    padding-bottom: 8rem;
+}
+
+.card {
+    width: 20rem;
+    margin: 10px 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do Contato */
+
+#content-contato {
+
+    margin-top: 30px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+/* Estilo do Footer */
+
+footer {
+    font-family: "Nunito", sans-serif;
+    color: #333;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 1400px) {
+    #content-sobre {
+        padding-top: 8rem;
+
+    }
+
+    .left-column h2 {
+        font-weight: 800;
+        font-size: 2.8em;
+    }
+
+    .left-column p {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .rigth-column img {
+        width: 90%;
+        margin-left: 6%;
+    }
+}
+
+@media (max-width: 1200px) {
+    #content-sobre {
+        display: flex;
+        flex-direction: column;
+        padding-top: 7rem;
+        margin-bottom: 0;
+    }
+
+    .left-column {
+        width: 70%;
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+
+    .rigth-column img {
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .rigth-column img {
+        width: 80%;
+
+    }
+
+    .rigth-column {
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-column h2 {
+        font-weight: 800;
+        font-size: 2.5em;
+    }
+
+    .left-column p {
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+
+}
+
+@media (max-width: 740px) {
+    .left-column {
+        width: 90%;
+
+    }
+
+    .rigth-column img {
+        width: 70%;
+
+    }
+}
+
+@media (max-width: 490px) {
+    #content-sobre {
+        padding-top: 6rem;
+    }
+
+    #content-sobre {
+        padding-bottom: 6rem;
+    }
+
+    .left-column h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .left-column p {
+        font-size: 16px;
+    }
+
+    #content-service {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5rem;
+        padding-top: 6rem;
+    }
+
+    #content-service .card:first-child {
+        margin-bottom: 30px;
+    }
+
+    .card {
+        width: 18rem;
+    }
+
+    #content-contato {
+        padding-bottom: 3rem;
+        margin-top: 0;
+    }
+}
