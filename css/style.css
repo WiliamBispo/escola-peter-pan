@@ -1,5 +1,4 @@
-/*Estilo Barra de Navegação*/
-
+/*ESTILO NAVBAR*/
 .navbar {
     position: fixed;
     width: 100%;
@@ -35,8 +34,7 @@
     color: #007bff;
 }
 
-/*Estilo Barra de Carousel*/
-
+/*SEÇÃO CAROUSEL*/
 .carousel-inner img {
     height: 100%;
     object-fit: cover;
@@ -62,8 +60,7 @@
     }
 }
 
-/* Estilo da página Sobre */
-
+/*SEÇÃO SOBRE*/
 #content-sobre {
     display: flex;
     align-items: center;
@@ -105,8 +102,7 @@
     padding-right: 15px;
 }
 
-/* Estilo do Serviços */
-
+/*SEÇÃO SERVIÇOS*/
 #content-service {
     background: #00c9da;
     display: flex;
@@ -130,8 +126,7 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo do Contato */
-
+/*SEÇÃO CONTATO*/
 #content-contato {
     margin-top: 30px;
     padding-top: 7rem;
@@ -153,8 +148,7 @@
     font-family: "Nunito", sans-serif;
 }
 
-/* Estilo do Localização */
-
+/*SEÇÃO LOCALIZAÇÃO*/
 #content-localizacao {
     background: #00b59e;
     display: flex;
@@ -204,8 +198,7 @@
     padding-right: 15px;
 }
 
-/* Estilo do Footer */
-
+/*SEÇÃO FOOTER*/
 footer {
     font-family: "Nunito", sans-serif;
     color: #333;
@@ -218,9 +211,31 @@ footer p {
     margin: 0;
 }
 
+/*BTN BACKTOTOP*/
+#backToTopBtn {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #0d6efd;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#backToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+
 @media (max-width: 1400px) {
 
-    /*SOBRE*/
+    /*SEÇÃO SOBRE*/
     #content-sobre {
         padding-top: 8rem;
 
@@ -239,7 +254,7 @@ footer p {
         margin-left: 6%;
     }
 
-    /*LOCALIZAÇÃO*/
+    /*SEÇÃO LOCALIZAÇÃO*/
     .left-column-loc h2 {
         font-size: 3em;
     }
@@ -256,7 +271,7 @@ footer p {
 
 @media (max-width: 1200px) {
 
-    /*SOBRE*/
+    /*SEÇÃO SOBRE*/
     #content-sobre {
         display: flex;
         flex-direction: column;
@@ -275,7 +290,7 @@ footer p {
         margin: 0;
     }
 
-    /*LOCALIZAÇÃO*/
+    /*SEÇÃO LOCALIZAÇÃO*/
     #content-localizacao {
         display: flex;
         flex-direction: column;
@@ -298,7 +313,7 @@ footer p {
 
 @media (max-width: 900px) {
 
-    /*SOBRE*/
+    /*SEÇÃO SOBRE*/
     .rigth-column img {
         width: 80%;
 
@@ -317,8 +332,7 @@ footer p {
         font-size: 1.4em;
     }
 
-    /*LOCALIZAÇÃO*/
-
+    /*SEÇÃO LOCALIZAÇÃO*/
     .rigth-column-loc iframe {
         width: 550px;
         height: 450px;
@@ -336,7 +350,7 @@ footer p {
 
 @media (max-width: 740px) {
 
-    /*SOBRE*/
+    /*SEÇÃO SOBRE*/
     .left-column {
         width: 90%;
 
@@ -347,8 +361,7 @@ footer p {
 
     }
 
-    /*LOCALIZAÇÃO*/
-
+    /*SEÇÃO LOCALIZAÇÃO*/
     .left-column-loc {
         width: 80%;
     }
@@ -361,7 +374,7 @@ footer p {
 
 @media (max-width: 490px) {
 
-    /*SOBRE*/
+    /*SEÇÃO SOBRE*/
     #content-sobre {
         padding-top: 6rem;
         padding-bottom: 6rem;
@@ -376,6 +389,7 @@ footer p {
         font-size: 16px;
     }
 
+    /*SEÇÃO SERVIÇOS*/
     #content-service {
         display: flex;
         flex-direction: column;
@@ -391,15 +405,19 @@ footer p {
         width: 18rem;
     }
 
+    /*SEÇÃO CONTATO*/
     #content-contato {
         padding-bottom: 3rem;
         margin-top: 0;
     }
 
-    /*LOCALIZAÇÃO*/
-
+    /*SEÇÃO LOCALIZAÇÃO*/
     #content-localizacao {
         padding-bottom: 5rem;
+    }
+
+    .left-column-loc {
+        width: 90%;
     }
 
     .left-column-loc h2 {
