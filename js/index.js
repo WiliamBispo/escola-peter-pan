@@ -14,3 +14,19 @@ function scrollToTop() {
         behavior: "smooth"
     });
 }
+
+function simularEnvio() {
+    const button = document.getElementById('submitButton');
+    
+    button.classList.add('loading');
+    button.disabled = true;
+    
+    button.innerHTML = 'Enviando... <div class="spinner-border spinner-border-sm" role="status"></div>';
+
+    setTimeout(function() {
+        button.classList.remove('loading');
+        button.disabled = false;
+        button.innerHTML = 'Enviar';
+        alert('Formulário enviado com sucesso!');
+    }, 3000);
+}
